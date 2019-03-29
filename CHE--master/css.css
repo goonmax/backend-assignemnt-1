@@ -1,0 +1,154 @@
+
+body {
+ font-size: 14px;
+    background-color: #eaeaea;
+}
+
+ body, html, .container {
+         height: 100%;
+    }
+.navbar-default{
+    background-color:white;
+    border-color: white;
+}
+
+h1 {
+    /*color: #9dc83b; */
+    color:#005ca9;
+    text-align: center;
+}
+
+h2 {
+  color: #9dc83b;
+}
+
+
+h3 {
+color:#005ca9;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+}
+
+.white {
+    color: white;
+    margin: 0;
+}
+
+
+
+.wrong {
+    display: none;
+    color:red;
+    font font-size: 10px;
+}
+
+#modifyFields{
+	position: absolute;
+	left: 16%;
+	top: 30%;
+	padding-left: 10px;
+}
+
+
+.formatSearch {
+    margin-right: 11%;
+}
+
+.ftableC{
+    padding-top: 2%;
+    margin-left: 8%;
+}
+
+.ucTableC{
+    padding-top: 2%;
+
+
+
+}
+
+.searchButton {
+	padding-top: 4px;
+  width: 80px;
+  height: 25px;
+ font-size: 12px;
+ font-weight: bold;
+ border-radius: 3px;
+ text-align: center;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.editButton {
+	padding-top: 4px;
+  width: 80px;
+  height: 25px;
+ font-size: 12px;
+ font-weight: bold;
+ border-radius: 3px;
+ text-align: center;
+    background-color: #9dc83b;
+    color: white;
+    border: 1px solid #9dc83b;
+    cursor: pointer;
+}
+
+#logout{
+position: absolute;
+
+ font-size: 12px;
+ left: 90%;
+ top: 5%;
+
+
+}
+
+
+.lButton
+{
+	padding-top: 4px;
+  width: 80px;
+  height: 25px;
+ font-size: 12px;
+font-weight: bold;
+border-radius: 3px;
+ text-align: center;
+    background-color: #9dc83b;
+    color: white;
+    border: 1px solid #9dc83b;
+    cursor: pointer;
+}
+
+
+.dButton
+{
+	padding-top: 4px;
+  width: 80px;
+  height: 25px;
+ font-size: 12px;
+font-weight: bold;
+border-radius: 3px;
+ text-align: center;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+
+
+
+#passwordElement {
+
+
+}
+
+
+
+
+
+}

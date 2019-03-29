@@ -1,0 +1,142 @@
+ 
+<html lang="en">
+  <head>
+      <title>Edit UseCase</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="EditItem.js" defer></script>
+  </head>
+  <body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+  <a href="SeachItem.html" class="navbar-left"><img src="designer.png"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=".html">Search Item </a></li>
+      <li><a href=".html">Search Designer</a></li>
+      <li id="searchUNav"><a href="searchUser.html">Search User</a></li>
+       <li id="addUCNav"><a href="addItem.html">Add Item</a></li>
+      <li id="addCNav"><a href=".html">Add Designer</a></li>
+       <li id="addUNav"><a href="addUser.html">Add User</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <button class="btn btn-danger navbar-btn" onclick="LogoutClick()">Logout</button>
+  </ul>
+</div>
+</nav>
+
+      <div class="container">
+        <h1>
+          Edit Item
+        </h1>
+
+<div class="row">
+<div class ="col-sm-4 col-sm-offset-4">
+
+<div class="form-group">
+   <label>ID</label>
+   <input id="idAdd" class="form-control" type="text" disabled>
+   <label id="idWrong" class="wrong">* ID field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Title</label>
+  <input id="titleAdd" class="form-control" type="text">
+  <label id="titleWrong" class="wrong">* Title field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Brand</label>
+  <textarea id="killchainAdd" class="form-control" rows="7" type="text">
+</textarea>
+  <label id="killchainWrong" class="wrong">*  field cannot be empty</label>
+    </div>
+<div class="form-group">
+  <label>Type</label>
+  <textarea id="prereqAdd" class="form-control" rows="7" type="text" disabled>
+</textarea>
+  <label>* Added automatically can not be changed</label>
+  <label id="prereqWrong" class="wrong">*  field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Color</label>
+  <textarea id="impactAdd" class="form-control" rows="7" type="text">
+</textarea>
+  <label id="impactWrong" class="wrong">*  field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Size</label>
+  <textarea id="queryAdd" class="form-control" rows="7" type="text">
+</textarea>
+  <label id="queryWrong" class="wrong">*  field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Stock</label>
+  <textarea id="clientAdd" class="form-control" rows="7" type="text">
+</textarea>
+  <label id="clientWrong" class="wrong">*   field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Tags</label>
+  <textarea id="actionAdd" class="form-control" rows="7" type="text">
+</textarea>
+  <label id="actionWrong" class="wrong">*   field cannot be empty</label>
+</div>
+<div class="form-group">
+  <label>Tags</label>
+  <textarea id="tagAdd" class="form-control" rows="7" type="text">
+</textarea>
+  <label id="tagWrong" class="wrong">*  field cannot be empty</label>
+</div>
+    <label>Version</label>    <label id="versionlbl"></label>
+    <div>
+    <label>Last Edit By:</label>    <label id="usernamelbl"></label>
+  </div>
+</div>
+          </div>
+   <div class="row">
+<div class ="col-sm-4 col-sm-offset-4" style="padding-top: 1%">
+<button class="lButton"  id="sButton" onclick="SaveClick()">Save</button>
+<button class="dButton"  id="dButton" onclick="DeleteClick()">Delete</button>
+     </div>
+    </div>
+
+     <div class="row">
+    <div>
+
+
+        <h2 style="text-align: center; font-size: 24px">Previous Version</h2>
+        <div class="ucTableC">
+    <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Brand</th>
+        <th>Type</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Stock</th>
+        <th>Tags</th>
+        <th>Edited By</th>
+      </tr>
+    </thead>
+    <tbody id="tBody">
+    </tbody>
+  </table>
+  </div>
+    </div>
+        </div>
+ </div>
+       </div>
+
+  </body>
+</html>

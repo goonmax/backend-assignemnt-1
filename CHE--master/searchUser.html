@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Search User</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+<script src="searchUser.js" defer></script>
+  </head>
+  <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+  <a href="SeachItem.html" class="navbar-left"><img src="designer.png"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=".html">Search Item </a></li>
+      <li><a href=".html">Search Designer</a></li>
+      <li id="searchUNav"><a href="searchUser.html">Search User</a></li>
+       <li id="addUCNav"><a href="addItem.html">Add Item</a></li>
+      <li id="addCNav"><a href=".html">Add Designer</a></li>
+       <li id="addUNav"><a href="addUser.html">Add User</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <button class="btn btn-danger navbar-btn" onclick="LogoutClick()">Logout</button>
+  </ul>
+</div>
+</nav>
+
+<div class="container">
+<h1 class="formatSearch">Search User</h1>
+
+<div class="row">
+  <div class ="col-sm-5 col-sm-offset-3">
+    <!--<div class="row">
+      <div class="form-group col-sm-10">
+        <input id="searchBar" class="form-control" placeholder="Search.." type="text" name="search" >
+      
+    </div>-->
+    <div class="form-group">
+      <input id="searchBar" class="form-control" placeholder="Search.." type="text" name="search" >
+    </div>
+    <form>
+      <label class="checkbox-inline">
+        <input id="fNameCheckbox" type="checkbox">First Name
+      </label>
+      <label class="checkbox-inline">
+        <input id="lNameCheckbox" type="checkbox">Last Name
+      </label>
+      <label class="checkbox-inline">
+        <input id="usernameCheckbox" type="checkbox">Username
+      </label>
+        <label class="checkbox-inline">
+        <input id="roleCheckbox" type="checkbox">Role
+      </label>
+    </form>
+    <button class="searchButton"  id="searchButton" onclick="SearchClick()"> Search</button>
+  </div>
+</div>
+    <div class="row" style="padding-top: 3%">
+<div class ="col-sm-5 col-sm-offset-3">
+
+    <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Lame</th>
+        <th>Username</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody id="tBody">
+    </tbody>
+  </table>
+  </div>
+</div>
+  </div>
+
+    </div>
+  </body>
+</html>

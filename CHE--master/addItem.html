@@ -1,0 +1,92 @@
+
+<html lang="en">
+    <head>
+        <title>Add Item</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="css.css" rel="stylesheet" type="text/css">
+  
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="addItem.js" defer></script>
+    </head>
+    <body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+    <a href="SeachItem.html" class="navbar-left"><img src="designer.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="SearchItem.html">Search Item </a></li>
+        <li><a href="searchDesigner.html">Search Designer</a></li>
+        <li id="searchUNav"><a href="searchUser.html">Search User</a></li>
+         <li id="addUCNav"><a href="addUseCase.html">Add Item</a></li>
+        <li id="addCNav"><a href="addDesigner.html">Add Designer</a></li>
+         <li id="addUNav"><a href="addUser.html">Add User</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <button class="btn btn-danger navbar-btn" onclick="LogoutClick()">Logout</button>
+    </ul>
+  </div>
+  </nav>
+  
+        <div class="container">
+          <h1>
+            Add Item
+          </h1>
+  
+  <div class="row">
+  <div class ="col-sm-4 col-sm-offset-4">
+  <div class="form-group">
+    <label>Title</label>
+    <input id="titleAdd" class="form-control" type="text">
+    <label id="titleWrong" class="wrong">* Title field cannot be empty</label>
+  </div>
+  <div class="form-group">
+    <label>Brand</label>
+    <textarea id="killchainAdd" class="form-control" rows="7" type="text"></textarea>
+    <label id="killchainWrong" class="wrong">* Brand field cannot be empty</label>
+  </div>
+  <div class="form-group">
+    <label>Type</label>
+    <textarea id="impactAdd" class="form-control" rows="7" type="text"></textarea>
+    <label id="impactWrong" class="wrong">* Type field cannot be empty</label>
+  </div>
+  <div class="form-group">
+    <label>Color</label>
+    <textarea id="queriesAdd" class="form-control" rows="7" type="text"></textarea>
+    <label id="queriesWrong" class="wrong">* Type field cannot be empty</label>
+  </div>
+  <div class="form-group">
+    <label>Size</label>
+    <textarea id="clientAdd" class="form-control" rows="7" type="text"></textarea>
+    <label id="clientWrong" class="wrong">* Type Tracking field cannot be empty</label>
+  </div>
+  <div class="form-group">
+    <label>Stock</label>
+    <textarea id="actionsAdd" class="form-control" rows="7" type="text"></textarea>
+    <label id="actionsWrong" class="wrong">* Stock Required field cannot be empty</label>
+  </div>
+  <div class="form-group">
+    <label>Tags</label>
+    <textarea id="tagsAdd" class="form-control" rows="7" type="text"></textarea>
+    <label id="tagsWrong" class="wrong">* Tags field cannot be empty</label>
+  </div>
+  <div>
+  <button class="lButton" onclick="AddUseCaseClick()">Add</button>
+        </div>
+  </div>
+            </div>
+  
+  <div style="padding-top: 10%">
+  </div>
+  
+         </div>
+  
+    </body>
+  </html>
+  

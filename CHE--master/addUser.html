@@ -1,0 +1,82 @@
+
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Add User </title>
+<link href="css.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="addUser.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+  <a href="SeachItem.html" class="navbar-left"><img src="designer.png"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=".html">Search Item </a></li>
+      <li><a href=".html">Search Designer</a></li>
+      <li id="searchUNav"><a href="searchUser.html">Search User</a></li>
+       <li id="addUCNav"><a href="addItem.html">Add Item</a></li>
+      <li id="addCNav"><a href=".html">Add Designer</a></li>
+       <li id="addUNav"><a href="addUser.html">Add User</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <button class="btn btn-danger navbar-btn" onclick="LogoutClick()">Logout</button>
+  </ul>
+</div>
+</nav>
+
+
+<div class="container">
+
+<h1>Add User</h1>
+
+<div class="row">
+  <div class ="col-sm-4 col-sm-offset-4">
+    <div class="form-group">
+       <label>First Name</label>
+       <input id="fNameAdd" class="form-control" type="text" name="fNameAdd">
+       <label id="fNameWrong" class="wrong">* First name field cannot be empty</label>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input id="lNameAdd" class="form-control" type="text" name="lNameAdd">
+      <label id="lNameWrong" class="wrong">* Last name field cannot be empty</label>
+    </div>
+    <div class="form-group">
+      <label>Username</label>
+      <input id="usernameAdd" class="form-control" type="text" name="usernameAdd">
+      <label id="usernameWrong" class="wrong">* Username field cannot be empty</label>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input id="passwordAdd" class="form-control" type="password" name="pwAdd">
+      <label id="passwordWrong" class="wrong">* Password field cannot be empty</label>
+    </div>
+    <div class="form-group">
+      <label>Select Privilege</label>
+      <select class="form-control" id="selectPrivilege">
+        <option value="trainee">Trainee</option>
+        <option value="standard">Standard</option>
+        <option value="admin">Admin</option>
+      </select>
+  </div>
+</div>
+    </div>
+<div class="row">
+  <div class ="col-sm-4 col-sm-offset-4">
+      <button class="lButton"  id="addButton" onclick="AddUserClick()">Add</button>
+  </div>
+</div>
+</div>
+</body>
+</html>
